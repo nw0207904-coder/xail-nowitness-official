@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>XAIL — NO WITNESS | Official</title>
+<meta name="description" content="XAIL / NO WITNESS — Independent music and multimedia project from Myanmar. Music, identity, visual expression and creative work.">
 
 <style>
 *{
@@ -21,7 +22,7 @@ body{
   background:#050505;
   color:#fff;
   font-family:Arial,Helvetica,sans-serif;
-  line-height:1.6;
+  line-height:1.7;
 }
 
 a{
@@ -34,6 +35,657 @@ nav{
   top:0;
   width:100%;
   z-index:100;
+  padding:18px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,.82);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid #202020;
+}
+
+.logo{
+  font-size:19px;
+  font-weight:900;
+  letter-spacing:4px;
+}
+
+.logo span{
+  color:#666;
+}
+
+nav .links{
+  display:flex;
+  gap:25px;
+}
+
+nav a{
+  font-size:11px;
+  letter-spacing:2px;
+  color:#999;
+  transition:.3s;
+}
+
+nav a:hover{
+  color:#fff;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 20px 80px;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 40%,#292929 0,#090909 32%,#000 75%);
+}
+
+.hero:before{
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  border:1px solid #333;
+  border-radius:50%;
+  opacity:.3;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  width:700px;
+  height:1px;
+  background:#292929;
+  transform:rotate(-20deg);
+  opacity:.35;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+}
+
+.small{
+  letter-spacing:8px;
+  color:#888;
+  font-size:11px;
+  margin-bottom:25px;
+}
+
+h1{
+  font-size:clamp(65px,15vw,175px);
+  line-height:.83;
+  letter-spacing:-7px;
+  font-weight:900;
+}
+
+h1 span{
+  color:#666;
+}
+
+.tagline{
+  margin-top:35px;
+  color:#aaa;
+  letter-spacing:4px;
+  font-size:13px;
+}
+
+.button{
+  display:inline-block;
+  margin-top:35px;
+  padding:14px 28px;
+  border:1px solid #777;
+  font-size:11px;
+  letter-spacing:3px;
+  transition:.3s;
+}
+
+.button:hover{
+  background:#fff;
+  color:#000;
+  border-color:#fff;
+}
+
+section{
+  padding:110px 8%;
+  border-top:1px solid #191919;
+}
+
+.section-title{
+  font-size:11px;
+  letter-spacing:5px;
+  color:#666;
+  margin-bottom:15px;
+}
+
+h2{
+  font-size:clamp(38px,7vw,72px);
+  line-height:1;
+  margin-bottom:45px;
+  letter-spacing:-3px;
+}
+
+.lead{
+  max-width:850px;
+  color:#aaa;
+  font-size:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  border:1px solid #242424;
+  padding:30px;
+  min-height:250px;
+  background:linear-gradient(145deg,#111,#070707);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#666;
+}
+
+.card-number{
+  color:#555;
+  font-size:11px;
+  letter-spacing:3px;
+}
+
+.card h3{
+  margin-top:55px;
+  font-size:25px;
+  line-height:1.1;
+}
+
+.card p{
+  color:#777;
+  font-size:13px;
+  margin-top:8px;
+}
+
+.about{
+  max-width:850px;
+}
+
+.about p{
+  color:#aaa;
+  font-size:17px;
+  margin-bottom:22px;
+}
+
+.quote{
+  margin-top:50px;
+  padding:30px;
+  border-left:2px solid #555;
+  color:#ccc;
+  font-size:22px;
+  letter-spacing:1px;
+}
+
+.philosophy{
+  background:#080808;
+}
+
+.philosophy-box{
+  max-width:900px;
+}
+
+.philosophy-box p{
+  color:#aaa;
+  font-size:18px;
+  margin-bottom:22px;
+}
+
+.statement{
+  margin-top:50px;
+  font-size:clamp(28px,5vw,55px);
+  font-weight:900;
+  line-height:1.05;
+  letter-spacing:-2px;
+}
+
+.contact{
+  text-align:center;
+  background:#050505;
+}
+
+.contact-text{
+  color:#888;
+  max-width:650px;
+  margin:0 auto;
+}
+
+.email{
+  display:inline-block;
+  margin-top:25px;
+  font-size:18px;
+  color:#fff;
+  border-bottom:1px solid #555;
+  padding-bottom:5px;
+}
+
+.socials{
+  margin-top:35px;
+}
+
+.socials a{
+  display:inline-block;
+  margin:7px;
+  padding:11px 17px;
+  border:1px solid #333;
+  color:#999;
+  font-size:10px;
+  letter-spacing:2px;
+  transition:.3s;
+}
+
+.socials a:hover{
+  color:#fff;
+  border-color:#fff;
+}
+
+footer{
+  text-align:center;
+  padding:35px 20px;
+  color:#444;
+  font-size:10px;
+  letter-spacing:3px;
+  border-top:1px solid #171717;
+}
+
+@media(max-width:700px){
+
+  nav{
+    padding:17px 20px;
+  }
+
+  nav .links{
+    display:none;
+  }
+
+  h1{
+    letter-spacing:-5px;
+  }
+
+  section{
+    padding:80px 20px;
+  }
+
+  .lead{
+    font-size:17px;
+  }
+
+  .about p,
+  .philosophy-box p{
+    font-size:16px;
+  }
+
+  .quote{
+    font-size:18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="logo">
+    XAIL <span>/ NO WITNESS</span>
+  </div>
+
+  <div class="links">
+    <a href="#music">MUSIC</a>
+    <a href="#about">ABOUT</a>
+    <a href="#portfolio">WORK</a>
+    <a href="#chapters">CHAPTERS</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<header class="hero">
+
+  <div class="hero-content">
+
+    <div class="small">
+      OFFICIAL WEBSITE
+    </div>
+
+    <h1>
+      XAIL<br>
+      <span>NO WITNESS</span>
+    </h1>
+
+    <p class="tagline">
+      THE VOICE — THE PHILOSOPHY
+    </p>
+
+    <a class="button" href="#music">
+      ENTER THE SOUND
+    </a>
+
+  </div>
+
+</header>
+
+
+<!-- MUSIC -->
+<section id="music">
+
+  <div class="section-title">
+    01 — MUSIC
+  </div>
+
+  <h2>
+    THE SOUND
+  </h2>
+
+  <p class="lead">
+    Original music, songwriting and production exploring
+    identity, struggle, resilience, transformation and
+    the search for an authentic voice.
+  </p>
+
+  <div class="grid" style="margin-top:50px;">
+
+    <div class="card">
+      <div class="card-number">01 / ARTIST</div>
+      <h3>XAIL</h3>
+      <p>Independent Artist / Songwriter / Producer</p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">02 / SOUND</div>
+      <h3>ALTERNATIVE</h3>
+      <p>Metal • Cinematic • Trap • Experimental</p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">03 / LANGUAGE</div>
+      <h3>THREE VOICES</h3>
+      <p>Burmese • Jinghpaw • English</p>
+    </div>
+
+  </div>
+
+  <a class="button"
+     href="https://www.youtube.com/@XAILNoWitness"
+     target="_blank"
+     rel="noopener">
+     VISIT YOUTUBE
+  </a>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+  <div class="section-title">
+    02 — ABOUT XAIL
+  </div>
+
+  <h2>
+    THE BEGINNING
+  </h2>
+
+  <div class="about">
+
+    <p>
+      XAIL (ဇဲလ်) is a Myanmar independent artist,
+      songwriter, music producer and multidisciplinary
+      creative from Tanai, Kachin State.
+    </p>
+
+    <p>
+      The creative journey began long before the name XAIL.
+      Life, experience, silence, failure and transformation
+      gradually shaped the person behind the identity.
+    </p>
+
+    <p>
+      Music became the language for experiences that could
+      not always be expressed through ordinary words.
+      Heavy music provided intensity. Alternative music
+      provided freedom. Different languages provided
+      different layers of identity.
+    </p>
+
+    <p>
+      Today, XAIL's work extends beyond individual songs
+      into visual design, creative concepts, digital
+      creativity and multimedia projects.
+    </p>
+
+    <div class="quote">
+      XAIL is the voice.<br>
+      No Witness is the philosophy.
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- NO WITNESS -->
+<section id="no-witness" class="philosophy">
+
+  <div class="section-title">
+    03 — NO WITNESS
+  </div>
+
+  <h2>
+    THE PHILOSOPHY
+  </h2>
+
+  <div class="philosophy-box">
+
+    <p>
+      There are moments no one sees.
+      Decisions made in silence.
+      Failures nobody knows about.
+      Victories that receive no applause.
+    </p>
+
+    <p>
+      No Witness represents the idea that some of the
+      most important battles in life are ultimately faced
+      within yourself.
+    </p>
+
+    <p>
+      It is not about hiding from the world.
+      It is about creating without needing permission,
+      standing without needing recognition, and continuing
+      without needing anyone to validate the journey.
+    </p>
+
+    <p>
+      No Witness is the creative world surrounding XAIL —
+      a space for music, ideas, identity, visual expression,
+      experimentation and multimedia creation.
+    </p>
+
+    <div class="statement">
+      CREATE WITHOUT PERMISSION.<br>
+      BUILD WITHOUT VALIDATION.<br>
+      KEEP MOVING FORWARD.
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+
+  <div class="section-title">
+    04 — PORTFOLIO
+  </div>
+
+  <h2>
+    THE WORK
+  </h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-number">01</div>
+      <h3>MUSIC & SONGWRITING</h3>
+      <p>
+        Original songs, multilingual lyrics and
+        alternative music concepts.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">02</div>
+      <h3>MUSIC PRODUCTION</h3>
+      <p>
+        Heavy guitars, electronic elements,
+        cinematic textures and modern production.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">03</div>
+      <h3>VISUAL DESIGN</h3>
+      <p>
+        Logo design, cover art direction,
+        branding and visual concepts.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">04</div>
+      <h3>MULTIMEDIA</h3>
+      <p>
+        Music videos, visual storytelling,
+        digital projects and creative concepts.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">05</div>
+      <h3>CREATIVE TECHNOLOGY</h3>
+      <p>
+        Prompt engineering, AI-assisted workflows
+        and digital creative development.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">06</div>
+      <h3>BRAND IDENTITY</h3>
+      <p>
+        Building a recognizable creative identity
+        around XAIL / NO WITNESS.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CHAPTERS -->
+<section id="chapters">
+
+  <div class="section-title">
+    05 — CHAPTERS
+  </div>
+
+  <h2>
+    THE STORY CONTINUES
+  </h2>
+
+  <p class="lead">
+    The Last Rewrite is an ongoing creative journey —
+    documenting music, ideas, visual projects,
+    experiments and the evolution of XAIL / NO WITNESS.
+  </p>
+
+  <div class="grid" style="margin-top:50px;">
+
+    <div class="card">
+      <div class="card-number">CHAPTER 01</div>
+      <h3>THE LAST REWRITE</h3>
+      <p>Before — The beginning of another chapter.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">CHAPTER 02</div>
+      <h3>IN DEVELOPMENT</h3>
+      <p>New music and multimedia works.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">CHAPTER 03</div>
+      <h3>COMING NEXT</h3>
+      <p>The story is still being written.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
+  <div class="section-title">
+    06 — CONTACT
+  </div>
+
+  <h2>
+    CONNECT
+  </h2>
+
+  <p class="contact-text">
+    For creative projects, collaborations,
+    professional inquiries and media contact.
+  </p>
+
+  <a class="email"
+     href="mailto:xail.creative@gmail.com">
+     xail.creative@gmail.com
+  </a>
+
+  <div class="socials">
+
+    <a href="https://www.youtube.com/@XAILNoWitness"
+       target="_blank"
+       rel="noopener">
+       YOUTUBE
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+  © 2026 XAIL / NO WITNESS<br>
+  INDEPENDENT CREATIVE PROJECT
+
+</footer>
+
+</body>
+</html>
   padding:20px 7%;
   display:flex;
   justify-content:space-between;
